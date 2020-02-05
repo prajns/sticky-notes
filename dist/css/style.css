@@ -1,0 +1,155 @@
+
+/* https://flatuicolors.com/palette/gb */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/lined_paper.png);
+    background-position: center;
+    background-attachment: fixed;
+    color: #fbc531;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;  
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #2f3640;
+    border-bottom: 3px solid #e1b12c;
+}
+
+.col-l {
+    margin-left: 20px;
+}
+
+.col-r {
+    margin-right: 20px;
+}
+
+h1 {
+    padding: 10px;
+    font-size: 200%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase; 
+    text-shadow: 0px 0px 3px #2c3e50;
+}
+
+.btn--add:link,
+.btn--add:visited {
+    display: block;
+    width: 120px;
+    text-align: center;
+    text-transform: uppercase; 
+    margin: 0 auto;
+    padding: 10px 30px;
+    font-size: 90%;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fbc531;
+    border: 1px solid #fbc531;
+    border-radius: 200px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn--add:hover,
+.btn--add:active {
+    color: white;
+    background-color: #e1b12c;
+    border: 1px solid #e1b12c;
+}
+
+section {
+    flex-grow: 1;
+    width: 99%;
+    position: relative;
+    margin: 0 auto;
+}
+
+header, section, footer {
+    flex-shrink: 0;
+}
+
+.note--basic {
+    width: 200px;
+    height: 240px;
+    border: 1px solid #ccc;
+    background-color: #dcdde1;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.note--basic__header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+.note--basic__body {
+    flex: 1;
+    display: flex; 
+    flex-direction: column;
+    padding-bottom: 1.0rem;
+    font-size: 80%;
+    font-weight: 400;
+    color: #353b48;
+}
+
+.note--header__close {
+    margin-left: auto;
+}
+
+.btn--delete:hover,
+.btn--delete:active {
+    color: #e84118 !important;
+}
+
+footer {
+    border-top: 2px solid #e1b12c;
+    background-color: #2f3640;
+    color: #718093;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+a:link,
+a:visited {
+    color: #718093;
+    margin-left: 10px;
+    font-size: 110%;
+    transition: color 0.2s;
+}
+
+.link__linkedin:hover,
+.link__linkedin:active {
+    color: #007bb5;
+}
+
+.link__github:hover,
+.link__github:active {
+    color: #fff;
+}
+
+.link__gitlab:hover,
+.link__gitlab:active {
+    color: #d35400;
+}
